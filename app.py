@@ -20,5 +20,5 @@ temperature = soup.select(".wu-value-to")[6].text
 condition = soup.select("p")[8].text
 
 #print values
-print(temperature)
+print(temperature+"°F")
 print(condition)
