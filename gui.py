@@ -6,8 +6,6 @@ window = tk.Tk();
 window.title("Weather APP") #Title of program
 window.geometry('500x500') #Window size on startup
 window.config(bg="#1f5a87")
-icon = tk.PhotoImage(file="partly_cloudy.png")
-window.iconphoto(False, icon)
 
 #Title
 title = tk.Label(window, text="Enter the state and city below", font=("Arial", 16), fg="white", bg="#1f5a87") #Establish label
@@ -50,7 +48,7 @@ def weather():
 
 
 #Submit
-submit = tk.Button(window, text="Submit", command=weather, bg="red", fg="white")
+submit = tk.Button(window, text="Submit", relief="solid", command=weather, bg="red", fg="white")
 submit.pack()
 
 
